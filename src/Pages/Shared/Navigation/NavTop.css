@@ -1,0 +1,18 @@
+
+.logo{
+    width: 300px;
+    height: 55px;
+
+}
+
+.top-contact{
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    margin-top: 15px;
+
+}
+
+.top-contact span {
+    font-size: 16px;
+}

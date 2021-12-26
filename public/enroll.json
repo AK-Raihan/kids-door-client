@@ -1,0 +1,46 @@
+[
+    {
+      "code": 4126,
+      "title" :"Kinder School",
+      "price": "750",
+      "item1": " Travel Bus Fees",
+      "item2": " Tuition Fees All Subject",
+      "item3": " Food & Snacks",
+      "item4": " Dress & Books Notes",
+      "item5": " Other Activities"
+    },
+    
+    {
+      "code": 4127,
+      "title" :"Small School",
+      "price": "650",
+      "item1": " Travel Bus Fees",
+      "item2": " Tuition Fees All Subject",
+      "item3": " Food & Snacks",
+      "item4": " Dress & Books Notes",
+      "item5": " Other Activities"
+    },
+    
+    {
+      "code": 4128,
+      "title" :"Middle School",
+      "price": "950",
+      "item1": " Travel Bus Fees",
+      "item2": " Tuition Fees All Subject",
+      "item3": " Food & Snacks",
+      "item4": " Dress & Books Notes",
+      "item5": " Other Activities"
+    },
+    
+    {
+      "code": 4129,
+      "title" :"High School",
+      "price": "850",
+      "item1": " Travel Bus Fees",
+      "item2": " Tuition Fees All Subject",
+      "item3": " Food & Snacks",
+      "item4": " Dress & Books Notes",
+      "item5": " Other Activities"
+    }
+]
+    

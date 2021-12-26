@@ -1,0 +1,81 @@
+.banner-carousel{
+    height: 950px;
+   }
+ .banner-content{
+    margin-bottom: 45vh;
+    width: 35%;
+ }
+
+ .banner-content h1{
+     font-size: 60px;
+     color: rgb(11, 207, 207);
+ }
+ .banner-content h3{
+     font-size: 40px;
+     color: rgb(20, 120, 192);
+     font-weight: 700;
+ }
+ .banner-content p{
+     font-size: 20px;
+     color: rgb(106, 187, 245);
+     font-weight: 400;
+     
+ }
+ .banner-content button {
+     font-size: 20px;
+     color: blueviolet;
+     font-weight: 7000;
+     padding: 15px 20px;
+ }
+
+
+
+
+
+ @media screen and (max-width: 900px) {
+    .banner-carousel{
+        height: auto;
+        display: flex;
+        align-items: center;
+       }
+     .banner-content{
+         width: 50%;
+        margin-bottom: 0;
+        display: block!important;
+
+        position: absolute;
+        right: 6%;
+        top: 6%;
+        bottom: 0;
+        left: 6%;
+        padding-top: 1.25rem;
+
+        color: #fff;
+        text-align: center;
+     }
+    
+     .banner-content h1{
+         font-size: 20px;
+         color: rgb(11, 207, 207);
+     }
+     .banner-content h3{
+         font-size: 20px;
+         color: rgb(20, 120, 192);
+         font-weight: 500;
+     }
+     .banner-content p{
+         display: none;
+         font-size: 15px;
+         color: rgb(106, 187, 245);
+         font-weight: 400;
+         
+     }
+     .banner-content button {
+        font-size: 15px;
+        color: blueviolet;
+        font-weight: 4000;
+        padding: 5px 5px;
+    }
+    
+   
+}

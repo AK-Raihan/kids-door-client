@@ -1,0 +1,28 @@
+
+.enroll-card{
+    border: none;
+    padding: 20px 0;
+    text-align: center;
+    background: #b496fa;
+    color: #fff;
+}
+.enroll-title h2{
+    font-size: 60px;
+    padding: 20px 0;
+}
+.fee{
+    background: #ebe6f5;
+    color: #111;
+}
+.fee span{
+    font-size: 50px;
+    
+}
+
+.enroll-service{
+    list-style: none;
+}
+.enroll-service li{
+    font-size: 20px;
+    line-height: 3rem;
+}
