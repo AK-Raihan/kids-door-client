@@ -15,7 +15,7 @@ const Booking = () => {
 
   
     useEffect(() => {
-      fetch(`http://localhost:5000/singleProduct/${productId}`)
+      fetch(`https://calm-island-72082.herokuapp.com/singleProduct/${productId}`)
         .then((res) => res.json())
         .then((result) =>{ 
           setEnroll(result)
@@ -36,7 +36,7 @@ const Booking = () => {
         console.log(data);
       data.status = "pending";
       
-          fetch("http://localhost:5000/confirmOrder", {
+          fetch("https://calm-island-72082.herokuapp.com/confirmOrder", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

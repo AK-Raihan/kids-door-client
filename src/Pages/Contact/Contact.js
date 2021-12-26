@@ -13,7 +13,7 @@ const Contact = () => {
   
       const onSubmit = (data) => {
         
-            fetch("http://localhost:5000/sendMessage", {
+            fetch("https://calm-island-72082.herokuapp.com/sendMessage", {
               method: "POST",
               headers: { "content-type": "application/json" },
               body: JSON.stringify(data),

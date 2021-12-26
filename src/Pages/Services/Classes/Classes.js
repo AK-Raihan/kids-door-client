@@ -7,7 +7,7 @@ const Classes = () => {
     const[classes, setClasses] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:5000/classes')
+        fetch('https://calm-island-72082.herokuapp.com/classes')
         .then(res=>res.json())
         .then(data=>setClasses(data));
     },[])

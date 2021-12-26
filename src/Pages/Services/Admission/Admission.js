@@ -7,7 +7,7 @@ const Admission = () => {
     const[enrollMent, setEnrollMent] = useState([])
 
     useEffect( ()=>{
-        fetch('http://localhost:5000/admission')
+        fetch('https://calm-island-72082.herokuapp.com/admission')
         .then(res=>res.json())
         .then(data=>setEnrollMent(data))
     } ,[])
