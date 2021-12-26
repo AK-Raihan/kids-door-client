@@ -15,7 +15,7 @@ const Classes = () => {
         <div className='classes-main py-5'>
             <div className="container">
                 <h4 className='text-center fs-1 mb-5'>Our Curriculum</h4>
-                <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div className="row row-cols-1 row-cols-md-3 g-4">
                     {
                         classes.map(clas=><Class
                         clas={clas}

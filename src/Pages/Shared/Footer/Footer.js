@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-3">
-                        <a class="navbar-brand" href="/">
+                        <a className="navbar-brand" href="/">
                                 <div className="logo">
                                     <img className='img-fluid' src={logo} alt="" />
                                 </div>

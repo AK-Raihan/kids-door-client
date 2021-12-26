@@ -90,7 +90,7 @@ const Contact = () => {
         <div className="contac-box" data-aos="zoom-in-left"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="2000">
-            <span><i class="fas fa-phone-volume"></i></span>
+            <span><i className="fas fa-phone-volume"></i></span>
             <h2>Phone</h2>
             <p>+88 01756104126</p>
         </div>
@@ -99,7 +99,7 @@ const Contact = () => {
         <div className="contac-box" data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="2000">
-            <span><i class="fas fa-envelope"></i></span>
+            <span><i className="fas fa-envelope"></i></span>
             <h2>Email</h2>
             <p>mkraihan207@gmail.com</p>
         </div>
@@ -108,7 +108,7 @@ const Contact = () => {
         <div className="contac-box " data-aos="zoom-in-right"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="2000">
-            <span><i class="fas fa-map-marker-alt"></i></span>
+            <span><i className="fas fa-map-marker-alt"></i></span>
             <h2>Address</h2>
             <p>Mymensingh, Bangladesh</p>
         </div>

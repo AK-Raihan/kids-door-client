@@ -45,8 +45,8 @@ const Login = () => {
                             <p className=' mt-3'>New User? Please Register</p>
                         </NavLink>
 
-                        {isLoading && <div class="spinner-grow text-warning" role="status">
-                            <span class="visually-hidden">Loading...</span>
+                        {isLoading && <div className="spinner-grow text-warning" role="status">
+                            <span className="visually-hidden">Loading...</span>
                             </div>}
                         {authError && <alert alert >{authError}</alert>}
                         </form>

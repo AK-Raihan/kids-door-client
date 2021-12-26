@@ -8,7 +8,7 @@ const NavTop = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-8">
-                        <a class="navbar-brand" href="/">
+                        <a className="navbar-brand" href="/">
                             <div className="logo">
                                 <img className='img-fluid' src={logo} alt="" />
                             </div>
@@ -16,8 +16,8 @@ const NavTop = () => {
                     </div>
                     <div className="col-lg-4">
                         <div className='top-contact text-end'>
-                            <span className='text-info'>kidsdoor@gmail.com <i class="fas fa-envelope"></i></span>
-                            <span>01756100000 <i class="fas fa-phone-volume"></i></span>
+                            <span className='text-info'>kidsdoor@gmail.com <i className="fas fa-envelope"></i></span>
+                            <span>01756100000 <i className="fas fa-phone-volume"></i></span>
                         </div>
                     </div>
                 </div>
