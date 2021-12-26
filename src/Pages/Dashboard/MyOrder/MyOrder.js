@@ -27,9 +27,9 @@ const MyOrder = () => {
         console.log(id);
       };
     return (
-        <div>
+        <div style={{marginTop:'100px'}}>
             <div className="container">
-                <div className="order-title">
+                <div className="order-title text-center">
                     <h2>My Order</h2>
                 </div>
                 <table class="table">

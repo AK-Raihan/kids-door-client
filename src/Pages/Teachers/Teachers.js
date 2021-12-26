@@ -7,9 +7,9 @@ import team4 from '../../images/team (4).jpg'
 
 const Teachers = () => {
     return (
-        <div>
+        <div className='teacher-main'>
             <div className="container py-5">
-                <div className="teacher-title">
+                <div className="teacher-title text-center pb-5">
                     <h1>Our Qualified Staff</h1>
                 </div>
                 <div className="row">

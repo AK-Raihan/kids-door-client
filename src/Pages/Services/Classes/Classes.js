@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Class from '../Class/Class';
+import './Classes.css'
 
 const Classes = () => {
 
@@ -11,9 +12,9 @@ const Classes = () => {
         .then(data=>setClasses(data));
     },[])
     return (
-        <div>
+        <div className='classes-main py-5'>
             <div className="container">
-                <h4 className='text-center'>Our Curriculum</h4>
+                <h4 className='text-center fs-1 mb-5'>Our Curriculum</h4>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     {
                         classes.map(clas=><Class

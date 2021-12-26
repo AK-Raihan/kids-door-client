@@ -1,5 +1,7 @@
 import React from 'react';
 import './Contact.css'
+import car from '../../images/car.webp'
+import bg from '../../images/bg0.png'
 import { useForm } from 'react-hook-form';
 
 const Contact = () => {
@@ -24,12 +26,11 @@ const Contact = () => {
               });
           };
     return (
-        <div className="container">
-            <div className="row py-3">
-                    <div className="col-lg-3">
-                    </div>
-                    <div className="col-md-6 p-3 text-center">
-              <h4>Quick Inquary</h4>
+        <div className='py-5 contact-main'>
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-6 text-center">
+              <h2>Quick Inquary</h2>
              <div className="contact-form">
              <form  onSubmit={handleSubmit(onSubmit)}>
                 <input
@@ -70,42 +71,51 @@ const Contact = () => {
                 />
               </form>
              </div>
-              <div className="col-lg-3">
-
+              </div>
+              <div className="col-lg-6">
+                <div className="img mt-5">
+                  <img className='mt-5 ms-5 img-fluid' src={car}alt="" />
+                </div>
               </div>
             </div>
-                </div>
-                <div className="row text-center pb-5">
-                    <h2 className='py-3'>Get in Touch</h2>
-                <div className="col-lg-4">
-                    <div className="contac-box" data-aos="zoom-in-left"
-                        data-aos-easing="ease-out-cubic"
-                        data-aos-duration="2000">
-                        <span><i class="fas fa-phone-volume"></i></span>
-                        <h2>Phone</h2>
-                        <p>+88 01756104126</p>
-                    </div>
-                </div>
-                <div className="col-lg-4">
-                    <div className="contac-box" data-aos="flip-left"
-                        data-aos-easing="ease-out-cubic"
-                        data-aos-duration="2000">
-                        <span><i class="fas fa-envelope"></i></span>
-                        <h2>Email</h2>
-                        <p>mkraihan207@gmail.com</p>
-                    </div>
-                </div>
-                <div className="col-lg-4">
-                    <div className="contac-box " data-aos="zoom-in-right"
-                        data-aos-easing="ease-out-cubic"
-                        data-aos-duration="2000">
-                        <span><i class="fas fa-map-marker-alt"></i></span>
-                        <h2>Address</h2>
-                        <p>Mymensingh, Bangladesh</p>
-                    </div>
-                </div>
-            </div>
         </div>
+        <div>
+          <img className='img-fluid' src={bg} alt="" />
+        </div>
+
+        <div className="container">
+        <div className="row text-center pb-5">
+        <h2 className='py-3'>Get in Touch</h2>
+        <div className="col-lg-4">
+        <div className="contac-box" data-aos="zoom-in-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+            <span><i class="fas fa-phone-volume"></i></span>
+            <h2>Phone</h2>
+            <p>+88 01756104126</p>
+        </div>
+        </div>
+        <div className="col-lg-4">
+        <div className="contac-box" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+            <span><i class="fas fa-envelope"></i></span>
+            <h2>Email</h2>
+            <p>mkraihan207@gmail.com</p>
+        </div>
+        </div>
+        <div className="col-lg-4">
+        <div className="contac-box " data-aos="zoom-in-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+            <span><i class="fas fa-map-marker-alt"></i></span>
+            <h2>Address</h2>
+            <p>Mymensingh, Bangladesh</p>
+        </div>
+        </div>
+        </div>
+        </div>
+      </div>
     );
 };
 

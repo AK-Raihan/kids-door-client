@@ -1,9 +1,10 @@
 import React from 'react';
+import './About.css'
 import image from '../../images/about.jpg'
 
 const About = () => {
     return (
-        <div>
+        <div className='about-main'>
             <div className="container py-5">
                 <div className="row">
                     <div className="col-lg-6">

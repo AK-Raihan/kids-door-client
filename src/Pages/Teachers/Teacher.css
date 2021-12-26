@@ -1,8 +1,11 @@
 
+.teacher-main{
+    background-color: rgb(204, 204, 203);
+}
 .teacher-img{
     background: crimson;
 }
 .teacher-img:hover{
-    background: rgb(218, 176, 8);
+    background: rgb(248, 245, 234);
     color: crimson;
 }

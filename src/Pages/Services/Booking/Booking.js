@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { useParams } from 'react-router-dom';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth/useAuth';
 
 const Booking = () => {
     const{productId} = useParams()
+    const location = useLocation()
+    const navigate= useNavigate()
 
     const{user}=useAuth();
     const [enroll, setEnroll] = useState({ name: "", price: "", title: ""});
@@ -43,6 +45,8 @@ const Booking = () => {
             .then((result) => {
               if(result.insertedId){
                 console.log(result.insertedId)
+                const destination = location?.state?.from || '/myOrder';
+             navigate(destination);
               }
             });
         };

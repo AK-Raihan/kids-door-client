@@ -16,9 +16,8 @@ import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Admission from './Pages/Services/Admission/Admission';
 import Booking from './Pages/Services/Booking/Booking';
 import MyOrder from './Pages/Dashboard/MyOrder/MyOrder';
-
-import ManageOrder from './Pages/Dashboard/ManageOrder/ManageOrder';
 import Contact from './Pages/Contact/Contact';
+import Classes from './Pages/Services/Classes/Classes';
 
 function App() {
   return (
@@ -34,18 +33,18 @@ function App() {
           </Route>
           <Route path="/about" element={<About />}>
           </Route>
-          <Route path="/about" component={<PrivateRoute/>} />
+          <Route path="/classes" element={<Classes/>}>
+          </Route>
+          <Route path="/booking/:productId" element={<PrivateRoute>
+            <Booking/>
+          </PrivateRoute>} />
           <Route path="/login" element={<Login />}>
           </Route>
           <Route path="/register" element={<Registration />}>
           </Route>
           <Route path="/admission" element={<Admission/>}>
           </Route>
-          <Route path="/booking/:productId" element={<Booking/>}>
-          </Route>
           <Route path="/myOrder" element={<MyOrder/>}>
-          </Route>
-          <Route path="/manageOrder" element={<ManageOrder/>}>
           </Route>
           <Route path="/contact" element={<Contact/>}>
           </Route>

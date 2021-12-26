@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth/useAuth';
 
 
 const Login = () => {
     const [loginData, setLoginData] = useState({});
-    const {signInGoogle, loginUser} = useAuth();
+    const {user, signInGoogle, loginUser, authError, isLoading } = useAuth();
+
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const handleGoogle = ()=>{
-        signInGoogle()
+        signInGoogle(location, navigate)
     }
 
     const handleOnBlur = e => {
@@ -20,7 +24,7 @@ const Login = () => {
     console.log(loginData);
 
     const handleLoginSubmit = e => {
-        loginUser(loginData.email, loginData.password);
+        loginUser(loginData.email, loginData.password, navigate, location);
         e.preventDefault();
     }
     return (
@@ -36,6 +40,15 @@ const Login = () => {
                             <input onBlur={handleOnBlur} name="email" className='form-control my-3' type="email" placeholder='Email' />
                             <input onBlur={handleOnBlur} name="password" className='form-control my-3' type="password" placeholder='Password' />
                             <input className='btn btn-dark w-100 btn-outline-secondary text-white' type="submit" value="Login" />
+                            <NavLink
+                            to="/register">
+                            <p className=' mt-3'>New User? Please Register</p>
+                        </NavLink>
+
+                        {isLoading && <div class="spinner-grow text-warning" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                            </div>}
+                        {authError && <alert alert >{authError}</alert>}
                         </form>
                     </div>
                     <div className="col-lg-4"></div>
