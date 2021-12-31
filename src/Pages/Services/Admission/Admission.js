@@ -1,16 +1,21 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { setEnrollment } from "../../../redux/action/enrollmentAction";
 import "./Admission.css";
 import Enrollment from "./Enrollment";
 
+
 const Admission = () => {
-    const[enrollMent, setEnrollMent] = useState([])
+    // const[enrollMent, setEnrollMent] = useState([])
+    const enrollMent = useSelector((state) => state.allProducts.allProducts);
+    const dispatch = useDispatch();
 
     useEffect( ()=>{
         fetch('https://calm-island-72082.herokuapp.com/admission')
         .then(res=>res.json())
-        .then(data=>setEnrollMent(data))
+        .then(data=>dispatch(setEnrollment(data)))
     } ,[])
+    console.log(enrollMent);
   return (
     <div>
       <div className="container py-5">

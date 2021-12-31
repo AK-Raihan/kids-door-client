@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import useAuth from '../../../Hooks/useAuth/useAuth';
+import { SetOrders } from '../../../redux/action/enrollmentAction';
 
 const MyOrder = () => {
-    const[orders, setOrders]=useState([])
+    const orders = useSelector((state) => state.allProducts.allProducts);
+    const dispatch = useDispatch();
+    // const[orders, setOrders]=useState([])
     const { user } = useAuth();
 
     const email = user.email;
@@ -10,7 +14,7 @@ const MyOrder = () => {
     useEffect(()=>{
         fetch(`https://calm-island-72082.herokuapp.com/myOrder/${email}`)
         .then(res=>res.json())
-        .then(data=>setOrders(data));
+        .then(data=>dispatch(SetOrders(data)));
     },[]);
 
 
